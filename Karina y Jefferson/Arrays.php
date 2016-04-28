@@ -3,29 +3,28 @@
 <head>
 	<title></title>
 </head>
-<pre>
 <body>
+<pre>
+<?php
 
-<?php 
 
-$miUsuaro = array();
-$miUsuario = array("Nombre" => "July" , "Apellido" => "Sierra" , "Edad" => "18");
-$miUsuario = array("Nombre" => "Karina" , "Apellido" => "Perez" , "Edad" => "21");
-$miUsuario = array("Nombre" => "Jhonnathan" , "Apellido" => "Ibica" , "Edad" => "19");
-array_push($miUsuario, var)
+$arrUsers = array();
+$arrayUser = array(false => "Carlos","Apellidos" => "Caro", "Edad" => 23, "Estado" => "Inactivo", "Nombre" => "Pedro");
+/*array_push($arrUsers, array("Nombre" => "Diego","Apellidos" => "Ojeda", "Edad" => 22, "Estado" => array("Activo","Inactivo")));
+//array_push($arrUsers, );
+array_push($arrUsers, array("Nombre" => "Julio","Apellidos" => "Peña", "Edad" => 30, "Estado" => "Activo"));
+array_push($arrUsers, "Hola");*/
 
-//unset eliminar la posicion de una array
-//echo count($miArray);
-//echo $miArray["Nombre"];
+foreach ($arrayUser as $key => $value) {
+	echo "<b>".$key."</b> = ".$value."\n";
+}
 
-/*array_push($miArray, "July");
-array_push($miArray, 18);
-array_push($miArray, 'a');*/
+//var_dump($arrUsers);
 
-//var_dump($miArray)
-
-?>
-
+//$carlota = array("carla","carlota");
+//	echo $carlota¨{0};
+ ?>
 </pre>
+
 </body>
 </html>
