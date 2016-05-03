@@ -3,11 +3,9 @@
 <head>
 	<title></title>
 </head>
-<pre>
 <body>
-
+<pre>
 <?php 
-
 class foo
 {
     function hacer_algo()
@@ -16,12 +14,24 @@ class foo
     }
 }
 
-$bar = new foo;
-$bar->hacer_algo();
+$ArrayPersona = array(	"Nombres" => "Diego Alonso", 
+						"Apellidos" => "Ojeda Medina", 
+						"Edad" => 24,
+						"Estado" => "Activo",158);
 
+//echo $ArrayPersona["Nombres"]; //Imprimir Array
 
-?>
+var_dump($ArrayPersona);
 
-</pre>
+$miObjeto = (object) $ArrayPersona;
+
+//echo $miObjeto->Nombres; //Imprimir Objeto
+
+$objFoo = new foo();
+
+var_dump($miObjeto);
+
+ ?>
+ </pre>
 </body>
 </html>
