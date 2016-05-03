@@ -10,17 +10,17 @@
 
 		class Multiplica{
 
-	    var $primernumero=7;
-	    var $segundonumero=8;
+    var $factor1=7;
+    var $factor2=8;
 
-	    function curratelo(){
-	        echo $this->factor1 * $this->factor2;
-	       }
-		}
+    function curratelo(){
+        echo $this->factor1*$this->factor2;
+       }
+	}
 
-	   $operacion = new Multiplica;
-	   $operacion ->curratelo();
-	 
+	   $objeto= new Multiplica;
+	   $objeto->curratelo();
+
  	?>
 
 </body>

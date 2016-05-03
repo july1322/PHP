@@ -6,21 +6,17 @@
 <body>
 
 
-	<?php
 
-		header ('Content-Type: image/png');
+		<?php
 
-		$im = @imagecreatetruecolor(120, 20)
-		    
-		    or die('No se puede Iniciar el nuevo flujo a la imagen GD');
+			$image = imagecreatetruecolor($width, $height);
+			imagealphablending($image, true);
 
-		$color_texto = imagecolorallocate($im, 233, 14, 91);
+			header('Content-type: image/png');
+			imagepng($image);
+			imagedestroy($image);
 
-		imagestring($im, 1, 5, 5,  'Un simple texto en String ', $color_texto);
-		imagepng($im);
-		imagedestroy($im);
-
-	?>
+		?>
 
 </body>
 </html>
