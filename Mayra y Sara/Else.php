@@ -5,20 +5,21 @@
 </head>
 <body>
 
+<?php 
 
-	<?php
+$a = 10;
+$b = 8;
 
-		$a = 5;
-		$b = 10;
 
-		if ($a > $b) {
-		  echo "a es mayor que b";
-		} else {
-		  echo "a NO es mayor que b";
-		}
+if ($a > $b) {
+  echo "a es mayor que b";
+} else {
+  echo "a NO es mayor que b";
+}
 
-	?>
 
+
+ ?>
 
 </body>
 </html>

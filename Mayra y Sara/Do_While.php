@@ -5,17 +5,29 @@
 </head>
 <body>
 
+<?php 
 
-	<?php
 
-		$i = 0;
-		
-		do {
-		    echo $i;
-		} while ($i > 0);
+$i = 3;
 
-	?>
+do {
+    if ($i < 5) {
+        echo "i no es lo suficientemente grande";
+        break;
+    }
+    $i *= $factor;
+    if ($i < $minimum_limit) {
+        break;
+    }
+   echo "i está bien";
 
+    /* procesar i */
+
+} while (0);
+
+
+
+ ?>
 
 </body>
 </html>

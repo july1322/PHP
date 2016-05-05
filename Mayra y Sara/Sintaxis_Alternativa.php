@@ -5,29 +5,27 @@
 </head>
 <body>
 
+<?php 
 
-	<?php
+$a = 5;
 
-		$a = 9;
+if ($a == 5):
+    echo "a igual 5";
+    echo "...";
+elseif ($a == 6):
+    echo "a igual 6";
+    echo "!!!";
+else:
+    echo "a no es 5 ni 6";
+endif;
 
-		if ($a == 5):
 
-		    echo "a igual 5";
-		    echo "...";
+?>
 
-		elseif ($a == 6):
 
-		    echo "a igual 6";
-		    echo "!!!";
 
-		else:
 
-		    echo "a no es 5 ni 6";
-
-		endif;
-
-	?>
-
+ ?>
 
 </body>
 </html>

@@ -5,30 +5,31 @@
 </head>
 <body>
 
+<?php 
 
-	<?php
 
-		/* ejemplo 1 */
+/* ejemplo 1 */
 
-		$i = 1;
+$i = 1;
+while ($i <= 10) {
+    echo $i++;  /* el valor presentado sería
+                   $i antes del incremento
+                   (post-incremento) */
+}
 
-		while ($i <= 10) {
-		    echo $i++;  /* el valor presentado sería
-		                   $i antes del incremento
-		                   (post-incremento) */
-		}
+/* ejemplo 2 */
 
-		/* ejemplo 2 */
+$i = 1;
+while ($i <= 10):
+    echo $i;
+    $i++;
+endwhile;
 
-		$i = 1;
 
-		while ($i <= 10):
-		    echo $i;
-		    $i++;
-		endwhile;
 
-	?>
 
+
+ ?>
 
 </body>
 </html>
