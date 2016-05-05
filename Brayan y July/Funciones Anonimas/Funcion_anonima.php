@@ -7,9 +7,13 @@
 
 
 	<?php
-
-		echo preg_replace_callback('~-([a-z])~', function ($coincidencia) {
-		    return strtoupper($coincidencia[1]);
+								//forma de caracter para llamar todas las letras
+		echo preg_replace_callback('~-([A-Z])~', function ($coincidencia) {
+		
+		//strtoupper: Convierte un string a mayúsculas
+		
+				    return strtoupper($coincidencia);
+		
 		}, 'Hola a todos');
 		// imprime holaMundo
 
