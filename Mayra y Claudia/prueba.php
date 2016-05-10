@@ -1,12 +1,14 @@
 <?php
-error_reporting(E_ALL);
 
-$foo = $bar; //notice : $bar uninitialized
+	error_reporting(E_ALL);
 
-$bar['foo'] = 'hello'; // no notice, although $bar itself has never been initialized (for example with "$bar = array()" )
+	$foo = $bar; //notice : $bar uninitialized
 
-$bar = array('foobar' => 'barfoo');
-$foo = $bar['foobar'] // ok
+	$bar['foo'] = 'hello'; // no notice, although $bar itself has never been initialized (for example with "$bar = array()" )
 
-$foo = $bar['nope'] // notice : no such index
+	$bar = array('foobar' => 'barfoo');
+	$foo = $bar['foobar'] // ok
+
+	$foo = $bar['nope'] // notice : no such index
+
 ?>
