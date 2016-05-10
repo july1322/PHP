@@ -31,6 +31,7 @@ function miGestorDeErrores($errno, $errstr, $errfile, $errline)
 
     /* No ejecutar el gestor de errores interno de PHP */
     return true;
+    // se retorna el error verdadero
 }
 
 // función para probar el manejo de errores
