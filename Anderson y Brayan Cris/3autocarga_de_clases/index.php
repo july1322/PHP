@@ -3,6 +3,7 @@
 	<title></title>
 </head>
 <body>
+	
 	<?php
 
 			/*AUTOCARGA DE CLASES 
@@ -26,5 +27,6 @@
 			echo $obj->nombre;
 
 	?>
+	
 </body>
 </html>

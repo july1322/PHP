@@ -3,6 +3,7 @@
 	<title></title>
 </head>
 <body>
+	
 	<?php 
 			class Clase1{
 
@@ -23,5 +24,6 @@
 
 
 	?>
+
 </body>
 </html>
