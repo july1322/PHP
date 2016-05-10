@@ -4,10 +4,13 @@
 	<title></title>
 </head>
 <body>
-<?php
 
-$a = ($b = 4) + 5; // ahora $a es igual a 9 y $b se ha establecido en 4.
-echo "$a";
-?>
+	<?php
+
+		$a = ($b = 4) + 5; // ahora $a es igual a 9 y $b se ha establecido en 4.
+		echo "$a";
+
+	?>
+
 </body>
 </html>
